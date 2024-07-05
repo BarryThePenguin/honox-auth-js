@@ -1,0 +1,9 @@
+name = "honox-auth-js"
+compatibility_date = "2024-04-01"
+compatibility_flags = [ "nodejs_compat" ]
+pages_build_output_dir = "./dist"
+
+[vars]
+AUTH_SECRET="22c4ed262b6dbbdb867844f8f26aaf1a8b2e39a9cbd2b55081523bedf9a33702"
+AUTH_GITHUB_ID="foo"
+AUTH_GITHUB_SECRET="bar"

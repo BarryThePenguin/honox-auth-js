@@ -1,0 +1,26 @@
+{
+  "name": "basic",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode client && vite build",
+    "preview": "wrangler pages dev",
+    "deploy": "$npm_execpath run build && wrangler pages deploy"
+  },
+  "private": true,
+  "dependencies": {
+    "@auth/core": "0.34.1",
+    "@hono/auth-js": "1.0.10",
+    "hono": "4.4.11",
+    "honox": "0.1.23",
+    "react": "npm:@hono/react-compat@0.0.1",
+    "react-dom": "npm:@hono/react-compat@0.0.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20240620.0",
+    "@hono/vite-cloudflare-pages": "0.4.1",
+    "@hono/vite-dev-server": "0.12.2",
+    "vite": "5.3.3",
+    "wrangler": "3.63.1"
+  }
+}
