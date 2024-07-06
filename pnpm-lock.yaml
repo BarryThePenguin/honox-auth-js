@@ -29,11 +29,11 @@ devDependencies:
     specifier: 4.20240620.0
     version: 4.20240620.0
   '@hono/vite-cloudflare-pages':
-    specifier: 0.4.1
-    version: 0.4.1(hono@4.4.11)
+    specifier: 0.4.2
+    version: 0.4.2(hono@4.4.11)
   '@hono/vite-dev-server':
-    specifier: 0.12.2
-    version: 0.12.2(hono@4.4.11)
+    specifier: 0.13.0
+    version: 0.13.0(hono@4.4.11)
   vite:
     specifier: 5.3.3
     version: 5.3.3
@@ -694,8 +694,8 @@ packages:
       hono: 4.4.11
     dev: false
 
-  /@hono/vite-cloudflare-pages@0.4.1(hono@4.4.11):
-    resolution: {integrity: sha512-B0M0Hy6JW4WMtnRmac/dqA0ooIKfspAY+2z+nKNvcDxvK8Ib0Imb90mbBYATn0+XBYis7L6ClxLAUvwfgCYdFQ==}
+  /@hono/vite-cloudflare-pages@0.4.2(hono@4.4.11):
+    resolution: {integrity: sha512-fvSmWNtL7rMTa6tfj0dJNu0UStp8veb2r1BfutoKtJ6GaTzO1sR5ElQw9jIYo46oTBcx8+i/9+NzyGR56awtrQ==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '*'
@@ -717,6 +717,23 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
+    dev: false
+
+  /@hono/vite-dev-server@0.13.0(hono@4.4.11):
+    resolution: {integrity: sha512-Qy+wEMFb6sphFsOoCSVsgt0tM4rXdNs/9Y9OJSu5kjs+xqNoKzCTXahFQJQYXkQQ1RAOOZxJaPZfdomD14zmwA==}
+    engines: {node: '>=18.14.1'}
+    peerDependencies:
+      hono: '*'
+    dependencies:
+      '@hono/node-server': 1.12.0
+      hono: 4.4.11
+      miniflare: 3.20240701.0
+      minimatch: 9.0.5
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    dev: true
 
   /@jridgewell/gen-mapping@0.3.5:
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}

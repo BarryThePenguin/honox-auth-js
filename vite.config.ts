@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   ssr: {
-    external: ["cookie"],
+    external: ["@auth/core"],
   },
   plugins: [
     honox({
